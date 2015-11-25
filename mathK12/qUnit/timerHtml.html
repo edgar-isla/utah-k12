@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <meta charset=utf-8 />
+    <title>JS Bin</title>
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script>
+
+        window.onload = function(){
+
+            (function(){
+                var counter = 60;
+
+                setInterval(function() {
+                    counter--;
+                    if (counter >= 0) {
+                        span = document.getElementById("count");
+                        span.innerHTML = counter;
+                    }
+                    // Display 'counter' wherever you want to display it.
+                    if (counter === 0) {
+                        alert('this is where it happens');
+                        clearInterval(counter);
+                    }
+
+                }, 1000);
+
+            })();
+
+        }
+    </script>
+
+
+
+
+</head>
+<body>
+<p id="hello">Wait <span id="count">60</span> secs</p>
+</body>
+</html>

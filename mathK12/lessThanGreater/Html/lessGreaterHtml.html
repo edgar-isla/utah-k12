@@ -7,7 +7,7 @@
     <!-- load http://maurizzzio.github.io/function-plot/ -->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
     <script src="http://brcdn.org/RbDt4b0Shej4JLF7KBQEilNbIiI.js"></script>
-    <title>Graphs</title>
+    <title>Greater Than/Less Than</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -16,6 +16,12 @@
 <style>
     .radio1{color: #31b0d5;font-size: xx-large}
     h1{color: red}
+    .borders1{border: dashed}
+    .borders2{
+                  border-top:    dashed;
+                  border-right:  dashed;
+                  border-bottom: dashed;
+              }
 
 </style>
 </head>
@@ -26,7 +32,7 @@
         <h3>Select whether the first image has More, Less, or is Equal to the number of animals in the second image.</h3><br>
     </div>
     <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-6 borders1" >
 
             <h1>Question #1</h1>
 
@@ -40,15 +46,15 @@
                 </div>
             </div>
             <div class="row col-sm-offset-3 ">
-                <input type="radio" id="equalTo1" style="font-size: xx-large">  <label class="radio1"> (=) Equal To</label><br>
-                <input type="radio" id="lessThan1" style="font-size: xx-large"> <label class="radio1"> (<) Less Than</label><br>
-                <input type="radio" id="greaterThan1" style="font-size: xx-large"> <label class="radio1"> (>) Greater Than</label><br>
+                <input type="radio" id="equalTo1"  name="dog" onchange="Question1()"   style="font-size: xx-large">  <label class="radio1"> (=) Equal To</label><br>
+                <input type="radio" id="lessThan1"  name="dog" onchange="Question1()"  style="font-size: xx-large"> <label class="radio1"> (<) Less Than</label><br>
+                <input type="radio" id="greaterThan1" name="dog" onchange="Question1()" style="font-size: xx-large"> <label class="radio1"> (>) Greater Than</label><br>
             </div>
 
         </div>
 
 
-        <div class="col-lg-6">
+        <div class="col-lg-6 borders2 ">
 
 
             <h1>Question #2</h1>
@@ -62,9 +68,9 @@
                 </div>
             </div>
             <div class="row col-sm-offset-3 ">
-                <input type="radio" id="equalTo2" style="font-size: xx-large">  <label class="radio1"> (=) Equal To</label><br>
-                <input type="radio" id="lessThan2" style="font-size: xx-large"> <label class="radio1"> (<) Less Than</label><br>
-                <input type="radio" id="greaterThan2" style="font-size: xx-large"> <label class="radio1"> (>) Greater Than</label><br>
+                <input type="radio" id="equalTo2" name="dog2" style="font-size: xx-large" onchange="Question2()"  >  <label class="radio1"> (=) Equal To</label><br>
+                <input type="radio" id="lessThan2" name="dog2" style="font-size: xx-large" onchange="Question2()"  > <label class="radio1"> (<) Less Than</label><br>
+            <input type="radio" id="greaterThan2" name="dog2" style="font-size: xx-large" onchange="Question2()"  > <label class="radio1"> (>) Greater Than</label><br>
             </div>
 
 
@@ -72,7 +78,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-lg-6">
+        <div class="col-lg-6 borders1">
 
             <h1>Question #3</h1>
             <div class="row">
@@ -85,15 +91,15 @@
             </div>
             </div>
             <div class="row col-sm-offset-3 ">
-                <input type="radio" id="equalTo3" style="font-size: xx-large">  <label class="radio1"> (=) Equal To</label><br>
-                <input type="radio" id="lessThan3" style="font-size: xx-large"> <label class="radio1"> (<) Less Than</label><br>
-                <input type="radio" id="greaterThan3" style="font-size: xx-large"> <label class="radio1"> (>) Greater Than</label><br>
+                <input type="radio" id="equalTo3" name="dog3" style="font-size: xx-large"     onchange="Question3()" >  <label class="radio1"> (=) Equal To</label><br>
+                <input type="radio" id="lessThan3" name="dog3" style="font-size: xx-large"    onchange="Question3()" > <label class="radio1"> (<) Less Than</label><br>
+                <input type="radio" id="greaterThan3" name="dog3" style="font-size: xx-large"  onchange="Question3()" > <label class="radio1"> (>) Greater Than</label><br>
             </div>
 
         </div>
 
 
-        <div class="col-lg-6">
+        <div class="col-lg-6 borders2">
 
             <h1>Question #4</h1>
             <div class="row">
@@ -106,9 +112,9 @@
                 </div>
             </div>
             <div class="row col-sm-offset-3 ">
-                <input type="radio" id="equalTo4" style="font-size: xx-large">  <label class="radio1"> (=) Equal To</label><br>
-                <input type="radio" id="lessThan4" style="font-size: xx-large"> <label class="radio1"> (<) Less Than</label><br>
-                <input type="radio" id="greaterThan4" style="font-size: xx-large"> <label class="radio1"> (>) Greater Than</label><br>
+                <input type="radio" id="equalTo4" name="dog4" style="font-size: xx-large"    onchange="Question4()" >  <label class="radio1"> (=) Equal To</label><br>
+                <input type="radio" id="lessThan4"  name="dog4" style="font-size: xx-large"  onchange="Question4()" > <label class="radio1"> (<) Less Than</label><br>
+                <input type="radio" id="greaterThan4" name="dog4" style="font-size: xx-large"onchange="Question4()" > <label class="radio1"> (>) Greater Than</label><br>
             </div>
 
         </div>
@@ -116,6 +122,9 @@
 
     </div>
 </div>
+<script src="../jsFiles/greaterlessthan.js">
+
+</script>
 
 </body>
 </html>

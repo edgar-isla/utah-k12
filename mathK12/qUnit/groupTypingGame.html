@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>type the sentence</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.countdownTimer.js"></script>
+    <link rel="stylesheet" type="text/css" href="jquery.countdownTimer.css"/>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="mainJs.js"></script>
+    <script>
+
+        var counter = 60;
+
+
+        var count = 0;
+        var divide = 0;
+        var text = "all good men are willing to help or something";
+        var ourModel = new TypingModel();
+        $(document).ready(function () {
+            $("textarea").on("keyup", function () {
+                ourModel.theirDocument = ($("textarea").val());
+                var x = ourModel.theirDocument;
+                var y = x.charAt(count);
+                var z = text.charAt(count);
+                if (y == z) {
+                    divide = ((count + 1) / text.length * 100);
+                    var fixedDivide = divide.toFixed();
+                    ($("body").css("background-color", "#01A014"));
+                    count++;
+                    if (divide <= 100) {
+                        $("p").html(fixedDivide + "%");
+
+                        $("#bar").css("width", fixedDivide + "%");
+                        divide == 100 ? alert("great job") : "";
+                    }
+                }
+                else {
+                    $("body").css("background-color", "red")
+                }
+            });
+            $("#resetButton").on("click", function () {
+                location.reload();
+//
+            });
+
+            $("#mySelect").on("change",function(){
+                counter=$("#mySelect").val();
+                $("#count2").text(counter);
+            });
+
+            $("#startButton").one("click", function () {
+                (function () {
+
+                    setInterval(function () {
+                        counter--;
+                        if (counter >= 0) {
+                            span = document.getElementById("count2");
+                            span.innerHTML = counter;
+                            $("#startButton").css("background-color", "red");
+                            $("#timerBackGround").css("background-color", "#BA0000")
+
+
+                        }
+                        // Display 'counter' wherever you want to display it.
+                        if(counter >0 && counter<=10){
+                            $("#timerBackGround").fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
+                        }
+                        if (counter === 0) {
+                            alert("times up. Reset to try again.");
+                            clearInterval(counter);
+                        }
+
+                    }, 1000);
+
+                })();
+
+            });
+
+
+        });
+
+
+    </script>
+    <style>
+
+    </style>
+</head>
+<body style="background-color: #1b6d85;">
+
+
+<div class="col-lg-2" style="background-color:#1e1e1e;color: white;;margin-top: 20%">
+
+    <h1>Choose Timer</h1>
+
+    <div class="row" style="background-color:  #a6a3a8">
+        <h3 style="color: black">Default: 60 seconds</h3>
+            <form role="form">
+                <div class="form-group">
+                    <select class="form-control" id="mySelect">
+                        <option value="55">60</option>
+                        <option value="55">55</option>
+                        <option value="50">50</option>
+                        <option value="45">45</option>
+                        <option value="40">40</option>
+                        <option value="35">35</option>
+                        <option value="30">30</option>
+                        <option value="25">25</option>
+                        <option value="20">20</option>
+                        <option value="15">15</option>
+                        <option value="10">10</option>
+                        <option value="8">8</option>
+                        <option value="5">5</option>
+                    </select>
+                    <br>
+
+                </div>
+            </form>
+
+
+    </div>
+
+
+</div>
+
+
+<div class="col-lg-8">
+
+
+    <div class="row">
+
+        <div style="text-align: center;background-color: black; color: red;padding: 2%;margin-bottom: 2%"><h1>Please
+            Type The Following Sentence in The Text Area</h1>
+
+
+            <h2 style="color: white;text-align: center"><i class="fa fa-arrow-right fa-md" style="color:green"> </i> all
+                good men are willing to help or something <i class="fa fa-arrow-left fa-md" style="color:green"> </i>
+            </h2>
+        </div>
+        <div class="container">
+
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped active" id="bar" role="progressbar" aria-valuenow="0%"
+                     aria-valuemin="0"
+                     aria-valuemax="100" style="width:0">
+                    <p id="percent" style="font-size:medium"></p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <textarea placeholder="Start Typing Here" style="margin-left: 16%;font-size: xx-large" id="typedArea" cols="50"
+                  rows="10"></textarea><br>
+
+        <div id="startButton"
+             style="background-color:#05480b;cursor: pointer; margin: 2% 20% 0 20%;color: white;font-size: xx-large;text-align: center">
+
+            <i class="fa fa-play fa-md"></i>
+            Start Timer
+        </div>
+
+        <div id="resetButton"
+             style="background-color:#000000;cursor: pointer; margin: 2% 20% 0 20%;color: red;font-size: xx-large;text-align: center"><i
+                class="fa fa-exclamation-triangle fa-md"> </i> Reset
+        </div>
+d
+    </div>
+
+
+</div>
+<div class="col-lg-2" style="background-color:#1e1e1e;color: white;margin-top: 20%">
+
+    <h1 style="text-align: center">Time Left</h1>
+
+    <div id="timerBackGround" class="row" style="background-color: #a6a3a8">
+        <h4 id="hello" style="text-align: center"> You Have  <span id="count2" style="text-align: center;font-size: xx-large;padding-bottom: 200px; color: black">  60 </span>
+            Seconds Left</h4>
+
+    </div>
+
+
+</div>
+
+
+</body>
+</html>
