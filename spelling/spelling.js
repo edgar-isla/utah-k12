@@ -1,17 +1,16 @@
 
-
 function WordList(source, delimeter) {
     this.delimeter = delimeter || " ";
     this.words = source.split(this.delimeter);;
     this.size = function(){
         return this.words.length;
-    }
+    };
     this.get= function (i) {
         return new Word(this.words[i]);
-    }
+    };
     this.sort = function(){
-        this.words.sort()
-    }
+        this.words.sort();
+    };
 
 }
 
@@ -24,9 +23,27 @@ function Word(src, language) {
         var msg = new SpeechSynthesisUtterance(this.src);
         msg.voice = this.voice;
         window.speechSynthesis.speak(msg);
-    }
+    };
+
     this.spelledRight = function(word) {
-        return word.toUpperCase() == src.toUpperCase();
+        return word.toUpperCase() === src.toUpperCase();
     }
 
 }
+
+
+
+
+
+
+
+//var myWord = new Word();
+//function splitTheirList(theirWords){
+//   var splitWords =  theirWords.split(" ");
+//
+//   randomWord =  Math.random() * splitWords[0] - (splitWords.length()) + (splitWords.length);
+//    myWord(randomWord,"en");
+//
+//
+//
+//}

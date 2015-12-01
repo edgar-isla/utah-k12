@@ -2,75 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1890db98-4a39-47b9-95f8-72c0412733de" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/science/images/Compass/CompassMats.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/science/images/Compass/CorkMagnet.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/DeathtoStock_Wired6.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/science/images/Compass/NorthAndSouth.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/science/images/Compass/WorldMapandCompass.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/science/images/matter/boilWater.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mathK12/lessThanGreater/images/buildingGame.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/science/images/magneticPersonality/experiment1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/science/images/magneticPersonality/experiment2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/science/images/magneticPersonality/experiment3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/science/images/magneticPersonality/experiment4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/science/images/magneticPersonality/experiment5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/science/images/magneticPersonality/experiment6.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/science/images/magneticPersonality/findings.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/science/images/magneticPersonality/kidScientist.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/science/images/magnetism/lightning2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/science/images/magneticPersonality/magnetchain.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/science/images/magneticPersonality/magneticbg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/science/images/magneticPersonality/magnets.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/science/images/magneticPersonality/multimag.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/science/images/magnetism/nailPickUp.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/science/images/magnetism/nailRub2.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/science/images/Compass/needlemagnet.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/science/images/magneticPersonality/notepad.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/science/images/magneticPersonality/paperclips.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/science/images/magnetism/permanentMag.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/science/images/matter/potBoil.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/science/images/matter/saltCollecting.jpeg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/science/images/matter/saltLake.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/science/images/matter/saltWaterMix.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mathK12/qUnit/.idea/.name" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/science/html/Compass.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mathK12/qUnit/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spelling/qunit/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/technology/qunit/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/science/magnetism/magetismFront.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/science/html/magneticPersonality.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/science/html/magnetism.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/science/html/matter.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mathK12/qUnit/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mathK12/qUnit/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mathK12/qUnit/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mathK12/qUnit/.idea/qUnit.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spelling/spelling.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/science/magnetism/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spelling/qunit/tests.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/technology/qunit/tests.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/technology/typing/typing.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/technology/qunit/typing.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mathK12/qUnit/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/mathK12/qUnit/.idea/workspace.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/science/magnetism/images/RubMagnet.JPG" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/science/magnetism/homestyle.css" afterPath="$PROJECT_DIR$/science/css/homestyle.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/science/magnetism/magnetism.js" afterPath="$PROJECT_DIR$/science/js/homestyle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mathK12/graphs/Graphs.html" afterPath="$PROJECT_DIR$/mathK12/graphs/Graphs.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mathK12/graphs/graphs.js" afterPath="$PROJECT_DIR$/mathK12/graphs/graphs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mathK12/qUnit/groupTypingGame.html" afterPath="$PROJECT_DIR$/mathK12/qUnit/groupTypingGame.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/science/magneticPersonality/homestyle.css" afterPath="$PROJECT_DIR$/science/magneticPersonality/homestyle.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/science/index.html" afterPath="$PROJECT_DIR$/science/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/technology/aerospace/js.js" afterPath="$PROJECT_DIR$/technology/aerospace/js.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mathIndexing/mathIndexing.html" afterPath="$PROJECT_DIR$/mathIndexing/mathIndexing.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/stylish-portfolio.css" afterPath="$PROJECT_DIR$/css/stylish-portfolio.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/teacherSide.html" afterPath="$PROJECT_DIR$/html/teacherSide.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/whathappened.js" afterPath="$PROJECT_DIR$/js/whathappened.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/whathappenednext.html" afterPath="$PROJECT_DIR$/html/whathappenednext.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spelling/index.html" afterPath="$PROJECT_DIR$/spelling/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spelling/spelling.js" afterPath="$PROJECT_DIR$/spelling/spelling.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mathK12/.idea/workspace.xml" afterPath="$PROJECT_DIR$/mathK12/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mathK12/lessThanGreater/Html/.idea/workspace.xml" afterPath="$PROJECT_DIR$/mathK12/lessThanGreater/Html/.idea/workspace.xml" />
     </list>
     <ignored path="utah-k12.iws" />
     <ignored path=".idea/workspace.xml" />

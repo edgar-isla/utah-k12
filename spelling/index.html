@@ -3,9 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
-<body>
+<body style="background-color: lightblue; margin-top: 5%">
+
+<div style="background-color: black; text-align: center; margin: 0 20% 0 20%">
+    <h1 style="color: red">Instructions: Put a Space After Each Word</h1>
+</div>
+
+<div style="text-align: center">
+<textarea rows="6" cols="50" placeholder="type here:">
+
+</textarea>
+
+</div>
+
+<div onclick="plzWork()" style="cursor: pointer; background-color: black;text-align: center;margin: 3% 30% 0 30%;color: white;font-size: xx-large; padding:1% 1% 1% 1%;border-radius: 25px">Say a Random Word
+
+
+</div>
+
+<div style="text-align: center; margin-top: 10%">
+    <input style="font-size: xx-large" type="text" placeholder="your spelling here"  id ="myWords">
+
+</div>
+<div onclick="correct($('#myWords').val())" style="cursor: pointer; background-color: black;text-align: center;margin: 3% 30% 0 30%;color: white;font-size: xx-large; padding:1% 1% 1% 1%;border-radius: 25px">Are you Right
+
+
+</div>
 
 </body>
 <script src="spelling.js"></script>
+<script>
+    var myTextArea,
+            myWordList,
+            randomWord,
+            theRandomWord,
+            theRandomWord2;
+    function plzWork(){
+        myTextArea = $("textarea").val();
+        myWordList = new WordList(myTextArea);
+//        randomWord = Math.random() * (myWordList.size() - 1) - 0+0 );
+        randomWord=Math.floor((Math.random() * (myWordList.size())) );
+       theRandomWord = myWordList.get(randomWord);
+        theRandomWord2 = myWordList.get(randomWord).src;
+
+        theRandomWord.say();
+
+    }
+    function correct(theirWord){
+
+       if (theRandomWord2.toUpperCase() == theirWord.toUpperCase()){
+           alert("you spelled it right");
+       }
+        else{
+           alert("try again");
+       }
+    }
+</script>
 </html>
