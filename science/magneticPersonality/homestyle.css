@@ -1,13 +1,4 @@
-#mainPage {
-    background-image: url("images/magneticbg.jpg");
-    background-size: 100%;
-}
-#pictureBox{
-    border: double;
-    height: 50%;
-    width: 100%;
-    background-color: white;
-}
+
 .hiddenStepInfo {
     display: none;
 }
@@ -89,6 +80,32 @@
     padding-top: 15px;
     font-size: 40px;
 }
+<<<<<<< HEAD:science/magnetism/homestyle.css
+
+#matterBody {
+    background: url("../matter/images/saltLake.jpg") no-repeat center center fixed;
+
+#magBody {
+    background: url("images/RubMagnet.JPG") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.link {
+    background-color: #fff;
+    text-align: right;
+}
+
+.intro-list {
+    text-align: left;
+}
+
+.myList {
+    box-shadow: none !important;
+}
+
+#magBtn {
+
+=======
 #classInput {
     width: 100%;
 }
@@ -128,4 +145,5 @@ img#experiments:hover {
 #lists {
     text-align: left;
     margin-left: 15%;
+>>>>>>> jbejar/gh-pages:Science/magneticPersonality/homestyle.css
 }
